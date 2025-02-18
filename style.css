@@ -1,0 +1,206 @@
+/*Animation Stuff*/
+@keyframes oscillate {
+    
+    0%, 100% {
+        transform:translateY(0px);
+    }
+
+    50% {
+        transform:translateY(10px);  
+    }
+}
+
+@keyframes fadeOut {
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+#window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width:80vw;
+    height:80vh;
+    background-color: rgb(2, 19, 16);
+    border:3px solid rgb(15, 1, 1);
+
+}
+
+body{
+    background-color: rgb(49, 49, 49);
+    height: 100vh;
+    width: 100vw;
+}
+
+#buttonB{
+    position:fixed;
+    top:70%;
+    left: 45%;
+    transition: transform 0.3s ease;
+}
+
+#buttonB:hover{
+    transform: translateY(-5px);
+}
+
+
+#buttonFacing{
+    position:fixed;
+    top:70%;
+    left: 49%;
+}
+
+
+#buttonFacing:hover{
+    animation: spin 1s ease-in-out infinite;
+}
+
+#buttonF{
+    position:fixed;
+    top:70%;
+    left: 50%;
+    transition: transform 0.3s ease;
+
+}
+
+#buttonF:hover{
+    transform: translateY(-5px);
+}
+
+#buttonStart {
+    position:fixed;
+    top:80%;
+    left: 45%;
+    /* transform: translate(-50%, -50%); */
+
+    transition: transform 0.3s ease;
+}
+
+#buttonStart:hover{
+    transform: translateY(-10px);
+}
+
+#title-png{
+    position:fixed;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#title-message{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 800;
+    position:fixed;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* transform: rotate(-20deg); */
+    animation: oscillate 2s ease-in-out infinite;
+
+}
+
+#title-desc{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 500;
+    position:fixed;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+}
+
+#fadeOut {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width:80vw;
+    height:80vh;
+    opacity: 0%;
+    background-color: rgb(0, 0, 0);
+    /* animation: fadeOut 2s ease-in-out infinite; */
+}
+
+
+#startScreen {
+    display: block;
+}
+
+#gameMain {
+    display: none;
+}
+
+#charSelect {
+    display: none;
+}
+
+#buttonBack{
+    transition: transform 0.3s ease;
+}
+#buttonBack:hover{
+    transform: translateY(-5px);
+}
+
+#choose-png{
+    position:fixed;
+    top:20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+#buttonOnward{
+    position:fixed;
+    top:70%;
+    left: 80%;
+    transition: transform 0.3s ease;
+}
+
+#buttonOnward:hover{
+    transform: translateY(-10px);
+}
+
+#pokemon{
+    position:fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#name{
+    position:fixed;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: 500;
+}

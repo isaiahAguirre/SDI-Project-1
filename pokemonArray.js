@@ -24,34 +24,53 @@ Promise.all(spriteURL).then(spriteURL => {
 })
 
 let nameAndSprite = [];
-let testURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png';
 
 console.log(nameAndSprite);
 
 
 let crement = 0;
 
-document.getElementById("buttonFacing").addEventListener("click", () => {
-    if(document.querySelector('#test').src == nameAndSprite[crement].front)
-    {
-        document.querySelector('#test').src =nameAndSprite[crement].back;
+document.getElementById("buttonStart").addEventListener("click", ()=>{
 
-    } else if (document.querySelector('#test').src == nameAndSprite[crement].back)
+    document.querySelector('#pokemon').src = nameAndSprite[crement].front
+    document.getElementById("name").innerHTML = `${nameAndSprite[crement].name}`;
+
+})
+
+document.getElementById("buttonOnward").addEventListener("click", ()=>{
+
+    let charCreate = document.getElementById("charSelect");
+    let gameMain = document.getElementById("mainGame");
+
+    console.log("played2");
+    if(charCreate.style.display !== "none")
     {
-        document.querySelector('#test').src =nameAndSprite[crement].front;
+        gameMain.style.display = "block";
+        charCreate.style.display = "none";
+    }
+})
+
+document.getElementById("buttonFacing").addEventListener("click", () => {
+    if(document.querySelector('#pokemon').src == nameAndSprite[crement].front)
+    {
+        document.querySelector('#pokemon').src =nameAndSprite[crement].back;
+
+    } else if (document.querySelector('#pokemon').src == nameAndSprite[crement].back)
+    {
+        document.querySelector('#pokemon').src =nameAndSprite[crement].front;
     };
 
 });
 document.getElementById("buttonF").addEventListener("click", () => {
     crement += 1;
-    document.querySelector('#test').src =nameAndSprite[crement].front;
+    document.querySelector('#pokemon').src =nameAndSprite[crement].front;
     document.getElementById("name").innerHTML = `${nameAndSprite[crement].name}`;
 });
 document.getElementById("buttonB").addEventListener("click", () => {
     if(crement != 0)
     {
         crement -=1;
-        document.querySelector('#test').src =nameAndSprite[crement].front;
+        document.querySelector('#pokemon').src =nameAndSprite[crement].front;
         document.getElementById("name").innerHTML = `${nameAndSprite[crement].name}`;
     }
 

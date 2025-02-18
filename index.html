@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body id = "body">
     <script type="module" src="./pokemonArray.js"></script>
-    <img id ="test" src="sasd.jpg" alt="Should be a pokemon" width="200" height="200">
-    <input id="buttonB" type="button" value="<-">
-    <label id="name"></label>
-    <input id="buttonF" type="button" value="->">
-    <input id="buttonFacing" type="button" value="Facing">
 
 
+
+    <div id="window">
+        <div id="startScreen">
+            <img id="title-png" src="images/title2-png.png" style="width:800px; height:300px;"/>
+            <input id = "buttonStart" type="image" src="images/start-png.png" style="width:200px;"/>
+            <audio id="falcon" src="sounds/FALCON.wav" autostart="false"></audio>
+            <label id="title-message">We have birds, and bird adjacent things!</label>
+            <label id="title-desc">A point and click game</label>
+        </div>
+        <div id="charSelect">
+            <input id = "buttonBack" type="image" src="images/back-arrow-png.png" style="width:100px;"/>
+            <img id="choose-png" src="images/choose-png.png" style="width:600px; height:300px;"/>
+            <input id = "buttonOnward" type="image" src="images/onward-png.png" style="width:300px;"/>
+
+            <div id="pokemonSelect">
+                <img id ="pokemon" src="sasd.jpg" alt="Should be a pokemon" width="200" height="200">
+                <input id="buttonB" type="image" src="images/arrow-left-png.png" style="width:100px;"/>
+                <label id="name"></label>
+                <input id="buttonF" type="image" src="images/arrow-png.png" style="width:100px;"/>
+                <input id="buttonFacing" type="image" src="images/flip-png.png" style="width:40px;"/>
+            </div>
+        </div>
+        <div id="mainGame">
+            
+        </div>
+
+        <!-- <div id="fadeOut"></div> -->
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>
