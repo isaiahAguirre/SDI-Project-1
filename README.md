@@ -12,7 +12,7 @@ This is a simple point and click game made with css, js, and html. It features a
 
 #### How do you run the game?
 
-   Clone it and run the html with live server / the method of your choice. That should be it.
+   Clone it and run the html with live server / the method of your choice. That should be it. OR, click this: https://isaiahaguirre.github.io/SDI-Project-1/
 
 #### How do you select your character?
 
