@@ -204,3 +204,27 @@ body{
     font-style: oblique;
     font-weight: 500;
 }
+
+#selectedPokeFront{
+    display: none;
+}
+
+#selectedPokeBack{
+    display:none;
+    position:fixed;
+    top:80%;
+    left: 3%;
+    animation: oscillate 2s ease-in-out infinite;
+
+}
+
+#background-png{
+    display:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width:80vw;
+    height:80vh;
+}
