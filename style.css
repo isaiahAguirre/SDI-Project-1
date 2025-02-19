@@ -10,13 +10,17 @@
     }
 }
 
-@keyframes fadeOut {
+@keyframes goUP {
     0%{
-        opacity: 0%;
+        opacity: 100%;
+        transform:translateY(0px);
+        display:block
     }
 
     100%{
-        opacity: 100%;
+        opacity: 0%;
+        transform:translateY(-10px);
+        display:none;
     }
 }
 
@@ -32,6 +36,7 @@
 }
 
 #window{
+    background-image: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -100,8 +105,8 @@ body{
 
 #title-png{
     position:fixed;
-    top:20%;
-    left: 50%;
+    top:25%;
+    left: 55%;
     transform: translate(-50%, -50%);
 }
 
@@ -207,6 +212,10 @@ body{
 
 #selectedPokeFront{
     display: none;
+    position:fixed;
+    top:70%;
+    left: 50%;
+    animation: oscillate 2s ease-in-out infinite;
 }
 
 #selectedPokeBack{
@@ -227,4 +236,116 @@ body{
     transform: translate(-50%, -50%);
     width:80vw;
     height:80vh;
+}
+
+#moon-png{
+    display: none;
+    position:fixed;
+    top: 10%;
+    left: 30%;
+    animation: oscillate 8s ease-in-out infinite;
+}
+
+#cave-png{
+    display: none;
+    position:fixed;
+    top: 45%;
+    left: 15%;
+}
+
+#castle-png{
+    width: 400px;
+    height: 400px;
+    display: none;
+    position:fixed;
+    top: 15%;
+    left: 70%;
+}
+
+#cave-interior-png{
+    display:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width:80vw;
+    height:80vh;
+}
+
+#castle-interior-png{
+    display:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width:80vw;
+    height:80vh;
+}
+
+#chest-png{
+    display:none;
+    position:fixed;
+    top: 40%;
+    left: 70%;
+}
+#cave{
+    display:none;
+}
+
+#castle{
+    display:none;
+}
+
+#back-to-main{
+    display:none;
+    position:fixed;
+    top: 3%;
+    left: 3%;
+    transition: transform 0.3s ease;
+}
+
+#back-to-main:hover{
+    transform: translateY(-5px);
+}
+
+#keyNotif{
+    display:none;
+    position:fixed;
+    top: 50%;
+    left: 70%;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style: oblique;
+    animation: none;
+
+}
+
+#win-png{
+    display:none;
+    position:fixed;
+    top: 25%;
+    left: 60%;
+    width: 600px;
+    height: 400px; 
+    transition: transform 0.3s ease;
+}
+
+#win-png:hover{
+    transform: translateY(-5px);
+}
+
+#lockedNotif{
+    display:none;
+    position:fixed;
+    top: 40%;
+    left: 65%;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style: oblique;
+    animation: none;
+
 }

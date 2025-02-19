@@ -46,6 +46,9 @@ document.getElementById("buttonOnward").addEventListener("click", ()=>{
     document.getElementById("selectedPokeBack").src = nameAndSprite[crement].back;
     document.getElementById("selectedPokeBack").style.display = 'block';
     document.getElementById("background-png").style.display = 'block';
+    document.getElementById("castle-png").style.display = 'block';
+    document.getElementById("cave-png").style.display = 'block';
+    document.getElementById("moon-png").style.display = 'block';
     console.log("played2");
     if(charCreate.style.display !== "none")
     {
