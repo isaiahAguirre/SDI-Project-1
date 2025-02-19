@@ -19,7 +19,7 @@ document.getElementById("buttonStart").addEventListener("click", ()=>{
 })
 
 document.getElementById("buttonBack").addEventListener("click", ()=>{
-    document.getElementById("falcon").play();
+
     let start = document.getElementById("startScreen");
     let charCreate = document.getElementById("charSelect");
     if(start.style.display === "none")
