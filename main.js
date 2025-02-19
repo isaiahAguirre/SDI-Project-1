@@ -51,8 +51,9 @@ document.getElementById("castle-png").addEventListener("click", ()=>{
             castle.style.display = "block";
         }
     } else{
+        document.getElementById("door").play();
         notif.style.display='block';
-        notif.style.animation='goUP 2s ease-in-out forwards';
+        notif.style.animation='goUP 1s ease-in-out forwards';
     }
 
     notif.onanimationend = ()=>{
