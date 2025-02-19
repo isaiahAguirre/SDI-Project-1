@@ -41,7 +41,8 @@ document.getElementById("buttonOnward").addEventListener("click", ()=>{
 
     let charCreate = document.getElementById("charSelect");
     let gameMain = document.getElementById("mainGame");
-
+    document.getElementById("startBGM").pause();
+    document.getElementById("mainBGM").play();
     document.getElementById("selectedPokeFront").src = nameAndSprite[crement].front;
     document.getElementById("selectedPokeBack").src = nameAndSprite[crement].back;
     document.getElementById("selectedPokeBack").style.display = 'block';

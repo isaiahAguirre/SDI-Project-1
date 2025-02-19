@@ -3,6 +3,7 @@ var key = false;
 //audio
 document.getElementById("buttonStart").addEventListener("click", ()=>{
     document.getElementById("falcon").play();
+    document.getElementById("startBGM").play();
     let start = document.getElementById("startScreen");
     let charCreate = document.getElementById("charSelect");
 
@@ -38,6 +39,7 @@ document.getElementById("castle-png").addEventListener("click", ()=>{
     let castle = document.getElementById("castle");
     let gameMain = document.getElementById("mainGame");
     let notif = document.getElementById("lockedNotif");
+    document.getElementById("mainBGM").pause();
     if(key === true){
         document.getElementById("castle-interior-png").style.display = 'block';
         document.getElementById("selectedPokeFront").style.display = 'block';
@@ -52,6 +54,7 @@ document.getElementById("castle-png").addEventListener("click", ()=>{
         }
     } else{
         document.getElementById("door").play();
+        document.getElementById("mainBGM").play();
         notif.style.display='block';
         notif.style.animation='goUP 1s ease-in-out forwards';
     }
@@ -68,7 +71,8 @@ document.getElementById("cave-png").addEventListener("click", ()=>{
 
     let cave = document.getElementById("cave");
     let gameMain = document.getElementById("mainGame");
-
+    document.getElementById("mainBGM").pause();
+    document.getElementById("caveBGM").play();
     document.getElementById("cave-interior-png").style.display = 'block';
 
     if(key !== true){
@@ -94,6 +98,8 @@ document.getElementById("back-to-main").addEventListener("click", ()=>{
     let castle = document.getElementById("castle");
     let notif = document.getElementById("keyNotif");
 
+    document.getElementById("caveBGM").pause();
+    document.getElementById("mainBGM").play();
     notif.style.animation='none';
     notif.style.display='none';
 
