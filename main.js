@@ -1,6 +1,5 @@
 var key = false;
 
-//audio
 document.getElementById("buttonStart").addEventListener("click", ()=>{
     document.getElementById("falcon").play();
     document.getElementById("startBGM").play();
